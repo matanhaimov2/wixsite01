@@ -41,7 +41,6 @@ body {
     background-color: white;
     padding-bottom: 2%;
     border: none;
-    transition: 0.3s;
     width: auto;
     color: rgb(65,65,65);
     cursor: pointer;
@@ -63,6 +62,10 @@ body {
 
 .active{
     color: green;
+}
+
+.bars-icon{
+    display: none;
 }
 
 .main-nav-images{
@@ -90,7 +93,7 @@ body {
 .main-text{
     display: flex;
     flex-direction: column;
-    font-size: 104%; 
+    font-size: 100%; 
     
 }
 
@@ -98,8 +101,6 @@ body {
     text-align: center;
     line-height: 180%;
     letter-spacing: 0.05em;
-    /* font: var(--font_2);   ask shlomi how to handle this problem */
-    /* font: ("wfont_bc139a_de4870ef0f3e47a7acf777d6120d70d2,wf_de4870ef0f3e47a7acf777d61,orig_graphikextralight"); */
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     color: rgb(43,83,54);
@@ -146,7 +147,7 @@ body {
 @-ms-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}   /* ask shlomi why do i need all the marked above */
+}
 
 .main-appointment{
     width: 100%;
@@ -156,7 +157,6 @@ body {
     width: fit-content;
     margin: auto;
     padding: 2% 3% 3%;
-    
 
 }
 
@@ -267,41 +267,3 @@ body {
     font-size: 70%;
     padding-bottom: 1%;
 }
-
-@media only screen and (max-device-width : 1200px) {
-
-    .inner-main-nav {
-        margin-left: 11% !important;
-    }
-
-    .button-wrapper {
-        padding-right: 3%;
-    }
-
-    .inner-main-bottom-nav {
-        margin-left: 18%;
-    }
-
-    .main-nav-buttons-book {
-        width: max-content;
-    }
-}
-
-@media only screen and (min-device-width : 650px) and (max-device-width : 1200px) {
-
-    .main-text {
-        font-size: 60%;
-    }
-
-}
-
-@media only screen and ( max-device-width : 650px) {
-
-    .main-text {
-        font-size: 57.5% !important;
-    }
-   
-}
-
-
-

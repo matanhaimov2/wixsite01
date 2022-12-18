@@ -1,0 +1,196 @@
+@media only screen and (max-device-width : 1200px) {
+
+    .inner-main-nav {
+        margin-left: 11% !important;
+    }
+
+    .button-wrapper {
+        padding-right: 3%;
+    }
+
+    .inner-main-bottom-nav {
+        margin-left: 18%;
+    }
+
+    .main-nav-buttons-book {
+        width: max-content;
+    }
+}
+
+@media only screen and ( min-device-width : 650px){
+    
+    .menu-main-nav{
+        display:none;
+    }
+    
+}
+
+/*From now on, font-size adjusments*/
+
+@media only screen and (min-device-width : 1000px) and (max-device-width : 1200px) {
+
+    .main-text {
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and ( min-device-width : 700px) and (max-device-width : 999px) {
+
+    .main-text {
+        font-size: 80%;
+    }
+   
+}
+
+@media only screen and ( min-device-width : 500px) and (max-device-width : 799px) {
+
+    .main-text {
+        font-size: 70%;
+    }
+   
+}
+
+@media only screen and ( min-device-width : 550px) and (max-device-width : px) {
+
+    .main-text {
+        font-size: 60%;
+    }
+   
+}
+
+@media only screen and ( min-device-width : 500px) and (max-device-width : 549px) {
+
+    .main-text {
+        font-size: 57%;
+    }
+   
+}
+
+@media only screen and ( min-device-width : 470px) and (max-device-width : 499px) {
+
+    .main-text {
+        font-size: 56%;
+    }
+   
+}
+
+@media only screen and ( min-device-width : 440px) and (max-device-width : 469px){
+    
+    .main-text {
+        font-size: 50%; /*font-size problem*/
+        
+    } 
+   
+}
+
+/* End of font-size adjusments*/
+
+
+
+/*From now on, adding main-menu*/
+
+@media only screen and (max-device-width : 650px) {
+
+    .button-wrapper{
+        display: none;
+    }
+
+    .inner-main-nav{
+        width: 89%;
+    }
+
+    .menu-icons{
+        display: block !important;
+        width: 11%;
+        height: fit-content;
+        margin-left: auto;
+        z-index: 2;
+    }
+
+    button{
+        background-color: white;
+        border: none;
+    }
+
+    .bars-icon{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin-left: auto;
+        
+    }
+
+    .bar-img, .bar-img-X{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        
+    }
+    .bar-img-X{
+        rotate: 180deg;
+    }
+
+    .overlay-menu{
+        position: fixed; 
+        width: 30%; 
+        height: 100%; 
+        top: 0;
+        right: 0;
+        background-color: white; 
+        z-index: 1; 
+        cursor: pointer; 
+    }
+
+    .menu-main-nav{
+        display: block !important;
+        width: 100%;
+        height: fit-content;
+        margin-top: 35%;
+    }
+    
+    .inner-menu-main-nav{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-main-button-wrapper{
+        margin: auto;
+        padding-bottom: 20%;
+        
+    }
+
+    .menu-main-nav-buttons{
+        display: inline-block;
+        padding: 2% 0 2% 0;
+        border: none;
+        width: auto;
+        color: rgb(65,65,65);
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+
+    }
+
+    .menu-main-nav-buttons-book{
+    width: 100%;
+    padding: 20% 50% 20% 50%;
+    background-color: rgb(21,41,2);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    }
+
+    .menu-booknow-wrapper{
+        padding-top: 1%;
+        padding-right: 24%;
+    }
+
+}
+
+/*End of adding main-menu*/
+

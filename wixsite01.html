@@ -2,6 +2,7 @@
     <html>
         <head>
             <link rel="stylesheet" href="wixsite01.css">
+            <link rel="stylesheet" href="screen-adjustment.css">
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
             <title> website01 </title>
@@ -39,6 +40,46 @@
 
                     <div class="button-wrapper" style="padding-right: 9.5%;"> 
                         <a type="button" class="main-nav-buttons main-nav-buttons-book"> book now </a>   
+                    </div>
+
+                    <div class="menu-icons" style="display:none;">
+                        <div class="bars-icon" id="bars-icon">
+                            <button type="button" id="bar-icon" onclick="myfunctionBars()"> <img src="bars-icon.png" class="bar-img"> </button>                        
+                        </div>
+    
+                        <div class="X-icon" id="X-icon" style="display:none;">
+                            <button type="button" id="x-icon" onclick="myfunctionX()"> <img src="bars-icon-X.png" class="bar-img-X"> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu" style="display:none;">
+                <div class="menu-main-nav">
+                    <div class="inner-menu-main-nav">
+                        <div class="menu-main-button-wrapper">
+                            <a type="button" class="menu-main-nav-buttons main-nav-buttons-home active"> HOME </a>
+                        </div>
+    
+                        <div class="menu-main-button-wrapper">
+                            <a type="button" class="menu-main-nav-buttons main-nav-buttons-about"> ABOUT </a>
+                        </div>
+    
+                        <div class="menu-main-button-wrapper">
+                            <a type="button" class="menu-main-nav-buttons main-nav-buttons-services"> SERVICES </a>
+                        </div>
+    
+                        <div class="menu-main-button-wrapper">
+                            <a type="button" class="menu-main-nav-buttons main-nav-buttons-products"> PRODUCTS </a>
+                        </div>
+    
+                        <div class="menu-main-button-wrapper">
+                            <a type="button" class="menu-main-nav-buttons main-nav-buttons-contact"> CONTACT </a>  
+                        </div>
+    
+                        <div class="menu-main-button-wrapper menu-booknow-wrapper"> 
+                            <a type="button" class="menu-main-nav-buttons menu-main-nav-buttons-book"> book now </a>   
+                        </div>
                     </div>
 
                 </div>
@@ -168,13 +209,28 @@
 
             <script>
             {
-                const nav = Document.querySelector(".main-appointment-button-wrapper");
-                let lastScrollY = window.scrollY;
-                window.addEventListener("scroll", () => {
-                if(lastScrollY < window.scrollY){
-                    console.log("we are going down")
-                }
-                });
+            function myfunctionBars()
+			{				
+                document.getElementById('bars-icon').style.display = "none"; 
+                document.getElementById('X-icon').style.display = "block"; 		
+                document.getElementById('overlay-menu').style.display = "block"; 	
+                	
+			
+			}	
+			function myfunctionX()
+			{
+				document.getElementById('X-icon').style.display = "none";
+				document.getElementById('bars-icon').style.display = "block";
+                document.getElementById('overlay-menu').style.display = "none"; 
+
+			}
+                // const nav = Document.querySelector(".main-appointment-button-wrapper");
+                // let lastScrollY = window.scrollY;
+                // window.addEventListener("scroll", () => {
+                // if(lastScrollY < window.scrollY){
+                //     console.log("we are going down")
+                // }
+                // });
 
             }
             </script>
